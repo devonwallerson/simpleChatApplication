@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container, .container2 {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.usernameAndPass,
+.chatBox,
+.toRetrieve {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type = 'password'],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.responseBox {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#warning {
+    color: red;
+    font-weight: bold;
+    text-align:center;
+}
+
+
+.toRetrieve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: auto; /* Allow button to take up its content width */
+    margin-left: 10px; /* Add some spacing between input and button */
+}
+
+.responseBox {
+    min-height: 50px; /* Set a minimum height */
+    resize: vertical; /* Allow vertical resizing */
+    overflow: auto; /* Show scrollbar when content exceeds box height */
+    min-height:150px;
+}
+@media only screen and (max-width: 600px) {
+    .container,
+    .responseBox,
+    .chatBox {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+}
+
+
+#chatbox {
+    width : 100%;
+    min-height:150px;
+}

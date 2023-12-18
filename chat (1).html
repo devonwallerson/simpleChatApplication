@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = 'viewport' content = "width = device-width, initial-scale=1.0">
+        <title>we.chat</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>we.chat</h1>
+        </header>
+
+        <div class = "container">
+            <div id = "userList"></div>
+            <div class = "usernameAndPass">
+                <h1>Send Messages!</h1>
+                <form id = "wrapper">
+                <label for = "name">Enter Username</label>
+                <input type = "text" name = "name" id = "name">
+
+                <label for = "password">Enter Password</label>
+                <input type = "text" name = "password" id = "password">
+                </form>
+            </div>
+            <div class = "chatBox">
+                <label for = "chatbox">Chatbox</label>
+                <textarea id = "chatbox" name = "chatbox" placeholder = "Insert Text Here"></textarea> 
+            </div>
+            <p id = "warning"></p>
+        </div>
+
+        <div class = "container2">
+            <h1>Retrieve Your Messages!</h1>
+            <div class = "toRetrieve">
+                <label for = "otherName">Enter Sender's Username</label>
+                <input type = "text" name = "otherName" id = "otherName">
+
+            </div>
+            <div class = "responseBox" id = "responseBox"> Response Will Populate Here...</div>
+            <p id = "warning2"></p>
+
+        </div>
+
+        <script src = "https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src = "script.js"></script>
+    </body>
+</html>
